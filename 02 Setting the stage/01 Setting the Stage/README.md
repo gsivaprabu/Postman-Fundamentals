@@ -1,4 +1,4 @@
-# 02 Setting the Stage - 02 Setting the Stage
+# 02 Setting the Stage - 01 Setting the Stage
 
 - API
 - Application
