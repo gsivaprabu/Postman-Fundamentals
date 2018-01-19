@@ -1,0 +1,207 @@
+{
+	"info": {
+		"name": "Household Wishlist",
+		"_postman_id": "db7763c8-e746-85d3-adec-7fc80d4bb16c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Households",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "G-Token",
+						"value": "ROM831ESV"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Taylor Household\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/households",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"households"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "G-Token",
+						"value": "ROM831ESV"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"gsivaprabu@gmail.com\",\n\t\"firstName\":\"Sivaprabu\",\n\t\"lastName\":\"Ganesan\",\n\t\"householdId\":1\n}\t"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Second User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "G-Token",
+						"value": "ROM831ESV"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"naveenasivaprabu@gmail.com\",\n\t\"firstName\":\"Naveena\",\n\t\"lastName\":\"Sivaprabu\",\n\t\"householdId\":1\n}\t"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "Add Book to User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "G-Token",
+						"value": "ROM831ESV"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/wishlist/1/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wishlist",
+						"1",
+						"books",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Book to Second User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "G-Token",
+						"value": "ROM831ESV"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/wishlist/2/books/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wishlist",
+						"2",
+						"books",
+						"2"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Household Books",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "G-Token",
+						"value": "ROM831ESV"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/wishlist/1/wishlistBooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"wishlist",
+						"1",
+						"wishlistBooks"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
